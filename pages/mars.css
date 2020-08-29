@@ -1,5 +1,4 @@
 /* Navbar */
-/* Navbar */
 .logo {
   width: 280px;
   height: 80px;
@@ -8,6 +7,22 @@
 
 .logo:hover {
   cursor: pointer;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 50px;
+  height: 42px;
+}
+
+.toggle-button i {
+  display: none;
+  justify-self: center;
+  position: relative;
+  font-size: 42px;
+  color: white;
 }
 
 #navbar {
@@ -25,8 +40,19 @@
   float: right;
 }
 
+/* Shown responsive nav */
+.shown {
+  display: flex;
+}
+
 #navbar li a.active {
   background-color: rgb(30, 65, 95);
+  height: 0;
+  transition: ease-in .3s;
+}
+
+#navbar li a.active:hover {
+  color: rgb(100, 255, 218);
 }
 
 #navbar li a,
@@ -38,7 +64,7 @@
   padding: 31px 31px;
   text-decoration: none;
   width: 80px;
-  font-size: initial;
+  font-size: 18px;
 }
 
 #navbar li a:hover,
@@ -95,4 +121,85 @@
 .normal-nav {
   transition: 0.5s ease-in-out;
   background-color: rgb(30, 65, 95);
+}
+
+
+/* Responsive Nav */
+
+@media screen and (max-width: 868px) {
+  .toggle-button i {
+    display: flex;
+  }
+
+  #navbar {
+    background-color: rgb(30, 65, 95);
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar li {
+    display: none;
+    width: 100%;
+  }
+
+  #navbar li a {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-self: center;
+    font-size: 24px;
+    background-color: rgb(30, 65, 95);
+  }
+
+  .shown {
+    display: flex !important;
+  }
+
+  .sticky li a.active {
+    background-color: rgb(30, 65, 95) !important;
+  }
+
+  .dropdown {
+    display: flex;
+    height: 100% !important;
+    background-color: rgba(1, 1, 1, 0);
+  }
+
+  .dropbtn {
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  .dropdown-content {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(1, 1, 1, 0);
+  }
+
+  .dropdown-content a {
+    margin-left: 25%;
+    margin-right: 25%;
+    align-self: center;
+    padding-top: 40px;
+    width: 100% !important;
+    font-size: 18px !important;
+    background-color: rgba(1, 1, 1, 0);
+  }
+
+  #navbar li a.active {
+    height: 25px;
+  }
+
+  #navbar li a.active:hover {
+    color: rgb(100, 255, 218);
+  }
+
+
 }

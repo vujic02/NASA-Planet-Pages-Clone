@@ -49,9 +49,19 @@ a {
   float: right;
 }
 
+/* Shown responsive nav */
+.shown {
+  display: flex;
+}
+
 #navbar li a.active {
   background-color: rgb(30, 65, 95);
+  height: 0;
   transition: ease-in .3s;
+}
+
+#navbar li a.active:hover {
+  color: rgb(100, 255, 218);
 }
 
 #navbar li a,
@@ -63,7 +73,7 @@ a {
   padding: 31px 31px;
   text-decoration: none;
   width: 80px;
-  font-size: initial;
+  font-size: 18px;
 }
 
 #navbar li a:hover,
@@ -183,6 +193,29 @@ a {
   margin-right: 25%;
 }
 
+.message-box {
+  border: rgb(140, 185, 220) 5px solid;
+}
+
+.box-wrapper-20 {
+  padding: 20px;
+}
+
+.message-box h1 {
+  color: rgb(30, 65, 95);
+}
+
+.message-box p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
 /* Responsive Nav */
 
 @media screen and (max-width: 868px) {
@@ -197,15 +230,21 @@ a {
   }
 
   #navbar li {
-    display: flex;
+    display: none;
     width: 100%;
   }
 
   #navbar li a {
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     align-self: center;
-    font-size: 36px;
+    font-size: 24px;
     background-color: rgb(30, 65, 95);
+  }
+
+  .shown {
+    display: flex !important;
   }
 
   .sticky li a.active {
@@ -227,7 +266,7 @@ a {
   }
 
   .dropdown-content {
-    margin-top: 80px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,5 +284,14 @@ a {
     font-size: 18px !important;
     background-color: rgba(1, 1, 1, 0);
   }
+
+  #navbar li a.active {
+    height: 25px;
+  }
+
+  #navbar li a.active:hover {
+    color: rgb(100, 255, 218);
+  }
+
 
 }
