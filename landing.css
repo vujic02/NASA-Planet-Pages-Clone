@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+.logo {
+  width: 280px;
+  height: 80px;
+  float: left;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 50px;
+  height: 42px;
+}
+
+.toggle-button i {
+  display: none;
+  justify-self: center;
+  position: relative;
+  font-size: 42px;
+  color: white;
+}
+
+#navbar {
+  font-weight: 600;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*overflow: 			hidden;*/
+  height: 80px;
+  font-size: 0;
+}
+
+#navbar li {
+  height: 100%;
+  float: right;
+}
+
+#navbar li a.active {
+  background-color: rgb(30, 65, 95);
+  transition: ease-in .3s;
+}
+
+#navbar li a,
+.dropbtn {
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 31px 31px;
+  text-decoration: none;
+  width: 80px;
+  font-size: initial;
+}
+
+#navbar li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(30, 65, 95);
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  width: 142px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 128px;
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(140, 185, 220);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  background-color: rgba(1, 1, 1, 0);
+}
+
+.sticky li a.active {
+  transition: ease-in 0.4s;
+  background-color: rgba(1, 1, 1, 0) !important;
+}
+
+.normal-nav {
+  transition: 0.5s ease-in-out;
+  background-color: rgb(30, 65, 95);
+}
+
+/* Landing Page */
+
+.landing {
+  background-image: url(../background/solar_system.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* SPLIT */
+.split-1 {
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  background-color: #fbb00e;
+}
+
+.split-1 h2 {
+  margin: 0;
+  padding-top: 5px;
+}
+
+.split-2 {
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(247, 241, 227);
+}
+
+.split-2 ul {
+  margin-top: 0px;
+  padding-top: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.split-2 li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.split-2 a {
+  color: #ab9e7f;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.split-2 a:hover {
+  color: black;
+}
+
+/* Overview */
+#overview {
+  margin-top: 100px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+/* Responsive Nav */
+
+@media screen and (max-width: 868px) {
+  .toggle-button i {
+    display: flex;
+  }
+
+  #navbar {
+    background-color: rgb(30, 65, 95);
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar li {
+    display: flex;
+    width: 100%;
+  }
+
+  #navbar li a {
+    width: 100%;
+    align-self: center;
+    font-size: 36px;
+    background-color: rgb(30, 65, 95);
+  }
+
+  .sticky li a.active {
+    background-color: rgb(30, 65, 95) !important;
+  }
+
+  .dropdown {
+    display: flex;
+    height: 100% !important;
+    background-color: rgba(1, 1, 1, 0);
+  }
+
+  .dropbtn {
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+  .dropdown-content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(1, 1, 1, 0);
+  }
+
+  .dropdown-content a {
+    margin-left: 25%;
+    margin-right: 25%;
+    align-self: center;
+    padding-top: 40px;
+    width: 100% !important;
+    font-size: 18px !important;
+    background-color: rgba(1, 1, 1, 0);
+  }
+
+}

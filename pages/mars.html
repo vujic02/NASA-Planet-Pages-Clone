@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="mars.css" />
+  <title>Solar System Exploration | Mars</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <ul id="navbar" class="normal-nav">
+    <img src="/img/logo1.png" class="logo" href="http://github.com/vujic02" />
+    <li><a class="active" href="/index.html">Home</a></li>
+    <li><a href="">News</a></li>
+    <li class="dropdown">
+      <a class="dropbtn">Planets</a>
+      <div class="dropdown-content">
+        <a href="#">Mercury</a>
+        <a href="#">Venus</a>
+        <a href="#">Earth</a>
+        <a href="/pages/mars.html">Mars</a>
+        <a href="/pages/jupiter.html">Jupiter</a>
+        <a href="#">Saturn</a>
+        <a href="#">Uranus</a>
+      </div>
+    </li>
+    <li><a href="">About</a></li>
+  </ul>
+  <!-- End of Navbar -->
+
+  <!-- 3d Model -->
+  <div class="mars"></div>
+
+  <script src="/pages/scripts/three.min.js"></script>
+  <script src="/pages/scripts/GLTFLoader.js"></script>
+  <script src="/pages/scripts/OrbitControls.js"></script>
+  <script src="/pages/scripts/mars.js"></script>
+  <script src="/pages/scripts/sticky-nav.js"></script>
+</body>
+
+</html>

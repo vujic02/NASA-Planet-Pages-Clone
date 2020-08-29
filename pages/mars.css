@@ -1,0 +1,98 @@
+/* Navbar */
+/* Navbar */
+.logo {
+  width: 280px;
+  height: 80px;
+  float: left;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+#navbar {
+  font-weight: 600;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*overflow: 			hidden;*/
+  height: 80px;
+  font-size: 0;
+}
+
+#navbar li {
+  height: 100%;
+  float: right;
+}
+
+#navbar li a.active {
+  background-color: rgb(30, 65, 95);
+}
+
+#navbar li a,
+.dropbtn {
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 31px 31px;
+  text-decoration: none;
+  width: 80px;
+  font-size: initial;
+}
+
+#navbar li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(30, 65, 95);
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  width: 142px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 128px;
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(140, 185, 220);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  background-color: rgba(1, 1, 1, 0);
+}
+
+.sticky li a.active {
+  transition: ease-in 0.4s;
+  background-color: rgba(1, 1, 1, 0) !important;
+}
+
+.normal-nav {
+  transition: 0.5s ease-in-out;
+  background-color: rgb(30, 65, 95);
+}
