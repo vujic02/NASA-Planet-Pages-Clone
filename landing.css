@@ -1,6 +1,7 @@
 body {
   margin: 0;
   color: black;
+  background-color: rgba(175, 175, 175, 0.2);
 }
 
 a {
@@ -256,6 +257,7 @@ a {
   background-color: rgb(209, 221, 230);
   padding-left: 15%;
   padding-right: 15%;
+  padding-bottom: 15%;
 }
 
 #need-to-know .headline {
@@ -273,14 +275,13 @@ a {
 .box {
   padding-top: 20px;
   width: 33%;
-  height: 250px;
+  height: 238px;
   text-align: center;
   border-bottom: rgb(176, 202, 221) 1px solid;
   border-left: rgb(176, 202, 221) 1px solid;
 }
 
 .box-num {
-  margin: 0 !important;
   width: 60px;
   height: 40px;
   display: inline-block;
@@ -289,13 +290,70 @@ a {
   border-radius: 50%;
 }
 
+
 .box-img {
-  width: 33%;
-  padding: 1.5rem;
-  background-size: cover;
-  background-position: center center;
+  display: flex;
+  width: 33.1%;
+  align-items: center;
+  justify-content: center;
+}
+.img-wrap {
+   width: 100%; /*or whatever you choose*/
+}
+.img-wrap img {
+   display: block;
+   width: 100%;
+   max-width: 500px; /*actual image width*/
+   height: 260px; /* maintain aspect ratio*/
+   margin: auto; /*optional centering of image*/
 }
 
+/* FAQ Section */
+#FAQ {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.faq-wrapper {
+  padding-top: 80px;
+  text-align: center;
+  color: rgb(58, 58, 58);
+}
+
+#FAQ p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#FAQ hr {
+  margin-top: 40px;
+}
+
+#FAQ a {
+  color: rgb(67, 170, 237);
+}
+
+#FAQ a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.faq-text-wrapper {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Footer */
+footer {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer-outer {
+  display: flex;
+  flex-direction: row;
+}
 
 
 
