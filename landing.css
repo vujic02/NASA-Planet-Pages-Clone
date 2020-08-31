@@ -253,10 +253,11 @@ a {
 
 /* Need to know section */
 #need-to-know {
+  color: rgb(58, 58, 58);
   margin-top: 100px;
   background-color: rgb(209, 221, 230);
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 15%;
 }
 
@@ -316,13 +317,13 @@ a {
 
 .faq-wrapper {
   padding-top: 80px;
-  text-align: center;
   color: rgb(58, 58, 58);
 }
 
 #FAQ p {
   font-size: 24px;
   font-weight: 500;
+  color: rgb(58, 58, 58);
 }
 
 #FAQ hr {
@@ -344,15 +345,133 @@ a {
 }
 
 /* Footer */
+
+.footer-bg {
+  background-image: url(img/footer-bg.jpg);
+  background-size: cover;
+}
+
 footer {
+  padding-top: 10%;
   margin-top: 10%;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .footer-outer {
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-inner {
   display: flex;
   flex-direction: row;
+}
+
+.footer-box {
+  width: 20%;
+}
+
+.footer-box h3 {
+  color: white;
+}
+
+.footer-box a {
+  color: white;
+}
+
+.footer-box a:hover {
+  color: rgb(140, 185, 220);
+}
+
+.footer-box-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading {
+  color: white;
+  text-align: center;
+}
+
+.links-list {
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.links-list li {
+  display: inline-block;
+  vertical-align: top;
+  height: 80px;
+}
+
+.links-list li a {
+  display: block;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 60px;
+  outline: 0;
+  border: #333 2px solid;
+  color: rgba(255, 255, 255, 0.8) !important;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+.links-list i {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+#instagram {
+  height: 60% !important;
+  margin: 0;
+}
+
+#github {
+  height: 60% !important;
+}
+
+#facebook {
+  height: 60% !important;
+}
+
+#instagram:hover {
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+#facebook:hover {
+  background-color: #3b5998;
+}
+
+#github:hover {
+  background-color: #0c0c0c;
+}
+
+/* Footer | Rights */
+.rights {
+  color: white;
+  text-align: center;
+}
+
+.rights .rights-heading {
+  text-transform: uppercase;
+  color: white;
+}
+
+.rights .rights-heading a {
+  color: rgb(154, 200, 230);
 }
 
 
@@ -363,8 +482,11 @@ footer {
 
 
 
+/* Responsive Nav, etc.*/
+@media screen and (max-width: 1000px) {
 
-/* Responsive Nav */
+}
+
 
 @media screen and (max-width: 868px) {
   .toggle-button i {
@@ -441,5 +563,32 @@ footer {
     color: rgb(100, 255, 218);
   }
 
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
+
+@media screen and (max-width: 700px) {
+  .box-wrapper-outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    border-bottom: rgb(176, 202, 221) 1px solid;
+    border-left: none;
+    width: 100%;
+  }
 
 }
