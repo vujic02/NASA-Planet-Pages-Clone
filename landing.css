@@ -133,6 +133,10 @@ a {
   background-color: rgb(30, 65, 95);
 }
 
+.vujic-link {
+  width: 280px;
+}
+
 /* Landing Page */
 
 .landing {
@@ -298,15 +302,21 @@ a {
   align-items: center;
   justify-content: center;
 }
-.img-wrap {
-   width: 100%; /*or whatever you choose*/
+
+.box-display-fix {
+  display: none;
 }
+
+.img-wrap {
+   width: 100%; 
+}
+
 .img-wrap img {
    display: block;
    width: 100%;
-   max-width: 500px; /*actual image width*/
+   max-width: 500px; 
    height: 260px; /* maintain aspect ratio*/
-   margin: auto; /*optional centering of image*/
+   margin: auto; 
 }
 
 /* FAQ Section */
@@ -484,6 +494,68 @@ footer {
 
 /* Responsive Nav, etc.*/
 @media screen and (max-width: 1000px) {
+  #overview {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .box-wrapper-outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .box-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .box {
+    border-bottom: rgb(176, 202, 221) 1px solid;
+    border-left: none;
+    width: 49%;
+  }
+
+
+  .box-img {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .box-fix1 {
+    width: 49% !important;
+  }
+
+  .box-fix2 {
+    display: none;
+  }
+
+  .box-display-fix {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+    width: 49%;
+    height: 238px;
+    border-bottom: rgb(176, 202, 221) 1px solid;
+    border-left: rgb(176, 202, 221) 1px solid;
+  }
+
+  .box:nth-child(2) {
+    border-left: rgb(176, 202, 221) 1px solid;
+  }
+
+  .no-border {
+    border-bottom: rgb(176, 202, 221) 1px solid;
+    border-left: none !important;
+    border-right: rgb(176, 202, 221) 1px solid;
+  }
+
+
+
+
 
 }
 
@@ -569,6 +641,14 @@ footer {
     align-items: center;
   }
 
+  #overview {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .footer-box {
+    text-align: center;
+  }
 
 }
 
@@ -589,6 +669,29 @@ footer {
     border-bottom: rgb(176, 202, 221) 1px solid;
     border-left: none;
     width: 100%;
+  }
+
+  .box:nth-child(2) {
+    border-left: none;
+  }
+
+  #overview {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .box-display-fix {
+    border-bottom: rgb(176, 202, 221) 1px solid;
+    border-left: none;
+    width: 100%;
+  }
+
+  .box-fix1 {
+    width: 100% !important;
+  }
+
+  .no-border {
+    border-right: none;
   }
 
 }
