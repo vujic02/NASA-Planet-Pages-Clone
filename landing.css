@@ -307,8 +307,22 @@ a {
   display: none;
 }
 
+.box-content {
+  padding: 20px;
+}
+
+/* left border fix */
+.left-remove {
+  border-left: none;
+}
+
+/* bottom border fix */
+.bottom-remove {
+  border-bottom: none;
+}
+
 .img-wrap {
-   width: 100%; 
+  width: 100%; 
 }
 
 .img-wrap img {
