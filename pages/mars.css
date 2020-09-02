@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+}
+
+.mars {
+  width: 100vw;
+  height: 1900px;
+  margin: 0;
+  overflow: hidden;
+  background-image: url(../background/backdrop_mars.jpg);
+}
+
 /* Navbar */
 .logo {
   width: 280px;
