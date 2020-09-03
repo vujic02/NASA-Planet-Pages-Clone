@@ -431,39 +431,6 @@ footer {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* SLIDER STYLES */
-.slider-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.slider-items a {
-  width: 50px;
-  height: 50px;
-}
-
-.slider-items i {
-  color: white;
-  font-size: 40px;
-}
-
-.slider-item {
-  color: white;
-  text-align: center;
-}
-
-.slider-item img {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-}
-
-
-
-
-
-
-
 .links-list {
   text-align: center;
   text-decoration: none;
