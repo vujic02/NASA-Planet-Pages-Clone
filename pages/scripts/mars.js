@@ -42,7 +42,7 @@ function init() {
 
   loader.load("./3d_models/Mars.glb", function (gltf) {
     planet = gltf.scene.children[0];
-    planet.scale.set(0.5, 0.5, 0.5);
+    planet.scale.set(0.2, 0.2, 0.2);
     scene.add(gltf.scene);
     animate();
   });
