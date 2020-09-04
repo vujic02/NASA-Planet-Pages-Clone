@@ -31,7 +31,7 @@ function init() {
   var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
   // to disable zoom
-  controls.enableZoom = false;
+  controls.enableZoom = true;
 
   // to disable pan
   controls.enablePan = false;
@@ -42,12 +42,7 @@ function init() {
 
   loader.load("./3d_models/Mars.glb", function (gltf) {
     planet = gltf.scene.children[0];
-    if (window.innerWidth < 750) {
-      planet.scale.set(0.2, 0.2, 0.2);
-    }
-    else {
-      planet.scale.set(0.5, 0.5, 0.5);
-    }
+    planet.scale.set(0.5, 0.5, 0.5);
     scene.add(gltf.scene);
     animate();
   });
