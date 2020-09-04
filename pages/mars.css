@@ -143,7 +143,38 @@ a {
 
 .vujic-link {
   width: 280px;
+  z-index: 1;
 }
+
+/* 3D Overlay Styles */
+
+.planet-name {
+  z-index: 0;
+  position: absolute;
+  bottom: auto;
+  top: 45vh;
+  left: 5%;
+  width: 310px;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+.planet-name h1 {
+  font-weight: 900;
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.planet-name h2 {
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 
 /* Landing Page */
 
@@ -586,8 +617,12 @@ footer {
     border-right: #f3d2c0 1px solid;
   }
 
-
-
+  .planet-name {
+    bottom: auto;
+    top: 65vh;
+    left: 2%;
+    width: 280px;
+  }
 
 
 }
@@ -681,6 +716,16 @@ footer {
 
   .footer-box {
     text-align: center;
+  }
+  .mars {
+    height: 850px;
+  }
+
+  .planet-name {
+    bottom: auto;
+    top: 500px;
+    left: 2%;
+    width: 260px;
   }
 
 }
