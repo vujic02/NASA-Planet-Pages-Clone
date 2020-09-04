@@ -42,7 +42,12 @@ function init() {
 
   loader.load("./3d_models/Mars.glb", function (gltf) {
     planet = gltf.scene.children[0];
-    scale();
+    if (window.innerWidth < 750) {
+      planet.scale.set(0.2, 0.2, 0.2);
+    }
+    else {
+      planet.scale.set(0.5, 0.5, 0.5);
+    }
     scene.add(gltf.scene);
     animate();
   });
@@ -61,13 +66,5 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-function scale() {
-  if (window.innerWidth < 750) {
-    planet.scale.set(0.2, 0.2, 0.2);
-  }
-  else {
-    planet.scale.set(0.5, 0.5, 0.5);
-  }
-}
 
 init();
