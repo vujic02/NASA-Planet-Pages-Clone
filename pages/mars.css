@@ -8,7 +8,7 @@ a {
 
 .mars {
   width: 100vw;
-  height: 950px;
+  height: 830px;
   margin: 0;
   overflow: hidden;
   background-image: url(../background/backdrop_mars.jpg);
@@ -43,6 +43,7 @@ a {
 }
 
 #navbar {
+  z-index: 1000;
   font-weight: 600;
   list-style-type: none;
   margin: 0;
@@ -67,19 +68,36 @@ a {
   background-color: rgb(30, 65, 95);
   height: 0;
   transition: ease-in .3s;
+  padding: 31px 31px !important;
 }
 
 #navbar li a.active:hover {
   color: rgb(100, 255, 218);
 }
 
-#navbar li a,
-.dropbtn {
+.about {
+  padding: 30px 31px !important;
+}
+
+#navbar li a {
+  z-index: 1000;
   transition: 0.5s ease-in-out;
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 31px 31px;
+  padding: 19px 31px;
+  text-decoration: none;
+  width: 80px;
+  font-size: 18px;
+}
+
+.dropbtn {
+  z-index: 1000;
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 29px 31px !important;
   text-decoration: none;
   width: 80px;
   font-size: 18px;
@@ -91,11 +109,13 @@ a {
 }
 
 .dropdown {
+  z-index: 1000;
   display: inline-block;
   position: relative;
 }
 
 .dropdown-content {
+  z-index: 1000;
   display: none;
   position: absolute;
   background-color: grey;
@@ -125,6 +145,7 @@ a {
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
+  z-index: 1000;
   top: 0;
   width: 100%;
   transition: 0.5s ease-in-out;
@@ -159,6 +180,7 @@ a {
 }
 
 .planet-name h1 {
+  z-index: 0;
   font-weight: 900;
   font-size: 50px;
   margin-top: 0;
@@ -168,6 +190,7 @@ a {
 }
 .planet-name h2 {
   font-weight: 400;
+  z-index: 0;
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 0;
@@ -624,7 +647,6 @@ footer {
     width: 280px;
   }
 
-
 }
 
 
@@ -668,7 +690,14 @@ footer {
   }
 
   .dropbtn {
+    z-index: 1000;
     display: block;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+  }
+
+  .about {
+    padding: 10px 31px !important;
   }
 
   .dropdown:hover .dropdown-content {
@@ -722,10 +751,42 @@ footer {
   }
 
   .planet-name {
-    bottom: auto;
-    top: 500px;
-    left: 2%;
-    width: 260px;
+    z-index: 1;
+    position: absolute;
+    top: 18%;
+    left: 35%;
+    right: 40%;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 830px) {
+  .planet-name {
+    position: absolute;
+    top: 18%;
+    left: 33%;
+    right: 40%;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .planet-name {
+    position: absolute;
+    top: 18%;
+    left: 31%;
+    right: 40%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .planet-name {
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    right: 40%;
+    text-align: center;
   }
 
 }
@@ -770,6 +831,14 @@ footer {
 
   .no-border {
     border-right: none;
+  }
+
+  .planet-name {
+    position: absolute;
+    top: 18%;
+    left: 28%;
+    right: 40%;
+    text-align: center;
   }
 
 }

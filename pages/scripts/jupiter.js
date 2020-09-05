@@ -5,57 +5,57 @@ function init() {
   let container = document.querySelector('.jupiter');
 
   scene = new THREE.Scene();
-//   scene.background = new THREE.Color(0xdddddd); -=-=- OVO JE BLOKIRALO MOJ BACKGROUND
+  //   scene.background = new THREE.Color(0xdddddd); -=-=- OVO JE BLOKIRALO MOJ BACKGROUND
 
-  camera = new THREE.PerspectiveCamera(40,window.innerWidth/window.innerHeight,1,5000);
-    camera.rotation.y = 45/180*Math.PI;
-    camera.position.x = 800;
-    camera.position.y = 100;
-    camera.position.z = 1000;
+  camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 5000);
+  camera.rotation.y = 45 / 180 * Math.PI;
+  camera.position.x = 800;
+  camera.position.y = 100;
+  camera.position.z = 1000;
 
-    hlight = new THREE.AmbientLight (0x404040, 5);
-    scene.add(hlight);
+  hlight = new THREE.AmbientLight(0x404040, 5);
+  scene.add(hlight);
 
 
-    renderer = new THREE.WebGLRenderer({antialias:false, alpha: true});
-    renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0x000000, 0);
-    container.appendChild(renderer.domElement);
+  renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true });
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setClearColor(0x000000, 0);
+  container.appendChild(renderer.domElement);
 
-      window.addEventListener('resize', onWindowResize);
+  window.addEventListener('resize', onWindowResize);
 
-    var controls = new THREE.OrbitControls( camera, renderer.domElement );
+  var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
-    // to disable zoom
-    controls.enableZoom = false;
-    
-    // to disable pan
-    controls.enablePan = false;
+  // to disable zoom
+  controls.enableZoom = true;
 
-      controls.update();
+  // to disable pan
+  controls.enablePan = false;
 
-    let loader = new THREE.GLTFLoader();
+  controls.update();
 
-    loader.load('./3d_models/Jupiter.glb', function(gltf){
-        planet = gltf.scene.children[0];
-        planet.scale.set(0.5,0.5,0.5);
-        scene.add(gltf.scene);
-        animate();
-    });
+  let loader = new THREE.GLTFLoader();
+
+  loader.load('./3d_models/Jupiter.glb', function (gltf) {
+    planet = gltf.scene.children[0];
+    planet.scale.set(0.5, 0.5, 0.5);
+    scene.add(gltf.scene);
+    animate();
+  });
 }
 
 function onWindowResize() {
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    renderer.setSize(width, height);
-    camera.aspect = width / height;
-    camera.updateProjectionMatrix();
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+  renderer.setSize(width, height);
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
 }
 
 function animate() {
-    renderer.render(scene,camera);
-    requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+  requestAnimationFrame(animate);
 }
 
 init();

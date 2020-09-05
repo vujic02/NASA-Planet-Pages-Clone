@@ -8,6 +8,14 @@ a {
   text-decoration: none;
 }
 
+.moon {
+  width: 100vw;
+  height: 950px;
+  margin: 0;
+  overflow: hidden;
+  background-image: url(../background/backdrop_moon.jpg);
+}
+
 /* Navbar */
 .logo {
   width: 280px;
@@ -151,6 +159,35 @@ a {
 
 .vujic-link {
   width: 280px;
+}
+
+/* 3D Overlay Styles */
+
+.planet-name {
+  z-index: 0;
+  position: absolute;
+  bottom: auto;
+  top: 45vh;
+  left: 5%;
+  width: 310px;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+.planet-name h1 {
+  font-weight: 900;
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.planet-name h2 {
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Landing Page */
@@ -594,11 +631,15 @@ footer {
     border-right: rgb(176, 202, 221) 1px solid;
   }
 
-
-
-
+  .planet-name {
+    bottom: auto;
+    top: 65vh;
+    left: 2%;
+    width: 280px;
+  }
 
 }
+
 
 
 @media screen and (max-width: 868px) {
@@ -607,17 +648,20 @@ footer {
   }
 
   #navbar {
+    z-index: 1000;
     background-color: rgb(30, 65, 95);
     display: flex;
     flex-direction: column;
   }
 
   #navbar li {
+    z-index: 1000;
     display: none;
     width: 100%;
   }
 
   #navbar li a {
+    z-index: 1000;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -627,14 +671,17 @@ footer {
   }
 
   .shown {
+    z-index: 1000;
     display: flex !important;
   }
 
   .sticky li a.active {
+    z-index: 1000;
     background-color: rgb(30, 65, 95) !important;
   }
 
   .dropdown {
+    z-index: 1000;
     display: flex;
     height: 100% !important;
     background-color: rgba(1, 1, 1, 0);
@@ -649,10 +696,11 @@ footer {
 
   .about {
     padding: 10px 31px !important;
-}
+  }
 
   .dropdown:hover .dropdown-content {
     display: flex;
+    z-index: 1000;
   }
 
   .dropdown-content {
@@ -663,6 +711,7 @@ footer {
     width: 100%;
     justify-content: center;
     background-color: rgba(1, 1, 1, 0);
+    z-index: 1000;
   }
 
   .dropdown-content a {
@@ -673,6 +722,7 @@ footer {
     width: 100% !important;
     font-size: 18px !important;
     background-color: rgba(1, 1, 1, 0);
+    z-index: 1000;
   }
 
   #navbar li a.active {
@@ -695,6 +745,49 @@ footer {
   }
 
   .footer-box {
+    text-align: center;
+  }
+
+  .moon {
+    height: 750px;
+  }
+
+  .planet-name {
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    right: 40%;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 830px) {
+  .planet-name {
+    position: absolute;
+    top: 10%;
+    left: 33%;
+    right: 40%;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .planet-name {
+    position: absolute;
+    top: 10%;
+    left: 31%;
+    right: 40%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .planet-name {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    right: 40%;
     text-align: center;
   }
 
@@ -740,6 +833,15 @@ footer {
 
   .no-border {
     border-right: none;
+  }
+
+  
+  .planet-name {
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    right: 40%;
+    text-align: center;
   }
 
 }
