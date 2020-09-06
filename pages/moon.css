@@ -1,6 +1,6 @@
-body {
+html, body {
   margin: 0;
-  color: black;
+  height: 100%;
   background-color: rgba(175, 175, 175, 0.2);
 }
 
@@ -10,7 +10,7 @@ a {
 
 .moon {
   width: 100vw;
-  height: 950px;
+  height: 86%;
   margin: 0;
   overflow: hidden;
   background-image: url(../background/backdrop_moon.jpg);
