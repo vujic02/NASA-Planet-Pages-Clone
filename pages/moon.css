@@ -1,7 +1,11 @@
 html, body {
   margin: 0;
   height: 100%;
-  background-color: rgba(175, 175, 175, 0.2);
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -48,7 +52,7 @@ a {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /*overflow: 			hidden;*/
+  /*overflow: hidden;*/
   height: 80px;
   font-size: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -201,15 +205,20 @@ a {
 
 /* SPLIT */
 .split-1 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   text-align: center;
   width: 100%;
   height: 35px;
   background-color: #64a8df;
 }
 
-.split-1 h2 {
-  margin: 0;
-  padding-top: 5px;
+.split-1 a {
+  padding-top: 5px !important;
+  padding-bottom: 5px;
+  color: black;
+  font-size: 24px;
   font-family: 'Gayathri', sans-serif;
 }
 
