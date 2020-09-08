@@ -1,6 +1,11 @@
-body {
+html, body {
   margin: 0;
-  color: black;
+  height: 100%;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -400,6 +405,7 @@ a {
 .footer-bg {
   background-image: url(img/footer-bg.jpg);
   background-size: cover;
+  max-height: 100%;
 }
 
 footer {
@@ -535,7 +541,11 @@ footer {
 
 
 
-
+@media screen and (max-width: 1100px) {
+  .box-content {
+    padding: 0;
+  }
+}
 
 /* Responsive Nav, etc.*/
 @media screen and (max-width: 1000px) {
@@ -561,6 +571,10 @@ footer {
     border-bottom: rgb(176, 202, 221) 1px solid;
     border-left: none;
     width: 49%;
+  }
+
+  .box-content {
+    padding: 20px;
   }
 
 

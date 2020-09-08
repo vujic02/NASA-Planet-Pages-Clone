@@ -440,7 +440,7 @@ a {
 /* Footer */
 
 .footer-bg {
-  background-image: url(img/footer-bg.jpg);
+  background-image: url(/img/footer-bg.jpg);
   background-size: cover;
 }
 

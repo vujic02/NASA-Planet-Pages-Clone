@@ -204,16 +204,6 @@ a {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-/* Landing Page */
-
-.landing {
-  background-image: url(../background/solar_system.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
 /* SPLIT */
 .split-1 {
   display: flex;
@@ -586,8 +576,11 @@ footer {
 
 
 
-
-
+@media screen and (max-width: 1100px) {
+  .box-content {
+    padding: 0;
+  }
+}
 
 
 /* Responsive Nav, etc.*/
@@ -615,6 +608,11 @@ footer {
     border-left: none;
     width: 49%;
   }
+
+  .box-content {
+    padding: 20px;
+  }
+
 
 
   .box-img {

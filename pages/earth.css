@@ -12,13 +12,13 @@ a {
   text-decoration: none;
 }
   
-  .moon {
-    width: 100vw;
-    height: 86%;
-    margin: 0;
-    overflow: hidden;
-    background-image: url(../background/backdrop_moon.jpg);
-  }
+.earth {
+  width: 100vw;
+  height: 86%;
+  margin: 0;
+  overflow: hidden;
+  background-image: url(../background/backdrop_earth.jpg);
+}
   
   /* Navbar */
   .logo {
@@ -324,7 +324,7 @@ a {
   #need-to-know {
     color: rgb(58, 58, 58);
     margin-top: 100px;
-    background-color: rgb(209, 221, 230);
+    background-color: #e3f2ff;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 15%;
@@ -411,6 +411,10 @@ a {
     padding-top: 80px;
     color: rgb(58, 58, 58);
   }
+
+  .faq-wrapper p {
+    font-size: 15px !important;
+  }
   
   #FAQ p {
     font-size: 24px;
@@ -426,6 +430,11 @@ a {
   #FAQ a {
     color: rgb(67, 170, 237);
   }
+
+  #FAQ h1 {
+    color: rgb(58, 58, 58);
+    font-family: 'Source Sans Pro', sans-serif;
+  }
   
   #FAQ a:hover {
     text-decoration: underline;
@@ -440,7 +449,7 @@ a {
   /* Footer */
   
   .footer-bg {
-    background-image: url(img/footer-bg.jpg);
+    background-image: url(/img/footer-bg.jpg);
     background-size: cover;
   }
   
@@ -574,9 +583,11 @@ a {
   
   
   
-  
-  
-  
+@media screen and (max-width: 1100px) {
+  .box-content {
+    padding: 0;
+  }
+}
   
   
   /* Responsive Nav, etc.*/
@@ -604,7 +615,10 @@ a {
       border-left: none;
       width: 49%;
     }
-  
+
+    .box-content {
+      padding: 20px;
+    }
   
     .box-img {
       width: 100%;

@@ -587,8 +587,11 @@ footer {
 
 
 
-
-
+@media screen and (max-width: 1100px) {
+  .box-content {
+    padding: 0;
+  }
+}
 
 /* Responsive Nav, etc.*/
 @media screen and (max-width: 1000px) {
@@ -615,6 +618,11 @@ footer {
     border-left: none;
     width: 49%;
   }
+
+  .box-content {
+    padding: 20px;
+  }
+
 
 
   .box-img {
