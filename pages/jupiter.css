@@ -860,4 +860,15 @@ footer {
     right: 40%;
     text-align: center;
   }
+  
+  #overview {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  #FAQ {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
+

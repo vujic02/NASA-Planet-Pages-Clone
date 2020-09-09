@@ -761,3 +761,16 @@ footer {
   }
 
 }
+
+@media screen and (max-width: 500px) {
+  #overview {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #FAQ {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+}
