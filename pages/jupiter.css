@@ -613,8 +613,6 @@ footer {
     padding: 20px;
   }
 
-
-
   .box-img {
     width: 100%;
     padding-top: 10px;
@@ -660,6 +658,7 @@ footer {
 
 
 @media screen and (max-width: 868px) {
+
   .toggle-button i {
     display: flex;
   }
@@ -755,7 +754,8 @@ footer {
   .footer-box {
     text-align: center;
   }
-  .mars {
+
+  .jupiter {
     height: 850px;
   }
 
@@ -860,7 +860,7 @@ footer {
     right: 40%;
     text-align: center;
   }
-  
+
   #overview {
     margin-left: 5%;
     margin-right: 5%;
