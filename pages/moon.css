@@ -657,17 +657,20 @@ footer {
   }
 
   #navbar {
+    z-index: 1000;
     background-color: rgb(30, 65, 95);
     display: flex;
     flex-direction: column;
   }
 
   #navbar li {
+    z-index: 1000;
     display: none;
     width: 100%;
   }
 
   #navbar li a {
+    z-index: 1000;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -677,20 +680,24 @@ footer {
   }
 
   .shown {
+    z-index: 1000;
     display: flex !important;
   }
 
   .sticky li a.active {
+    z-index: 1000;
     background-color: rgb(30, 65, 95) !important;
   }
 
   .dropdown {
+    z-index: 1000;
     display: flex;
     height: 100% !important;
     background-color: rgba(1, 1, 1, 0);
   }
 
   .dropbtn {
+    z-index: 1000;
     display: block;
     padding-bottom: 10px !important;
     padding-top: 10px !important;
@@ -849,14 +856,21 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  .planet-name {
+    display: none;
+  }
+
+  .moon {
+    height: 80%;
+  }
+
   #overview {
     margin-left: 5%;
     margin-right: 5%;
   }
-
+  
   #FAQ {
     margin-left: 5%;
     margin-right: 5%;
   }
-
 }

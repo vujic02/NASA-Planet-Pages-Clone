@@ -1,381 +1,354 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="saturn.css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-    <title>Solar System Exploration | Mars</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="mercury.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <title>Solar System Exploration | Mercury</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <ul id="navbar" class="normal-nav">
-        <img src="../img/logo1.png" class="logo" href="http://github.com/vujic02" />
-        <li><a class="active" href="../index.html">Home</a></li>
-        <li><a href="/pages/moon.html">Earth's Moon</a></li>
-        <li><a href="">About</a></li>
-        <li class="dropdown">
-            <a href="" class="dropbtn">Planets</a>
-            <div class="dropdown-content">
-                <a href="#">Mercury</a>
-                <a href="#">Venus</a>
-                <a href="#">Earth</a>
-                <a href="/pages/mars.html">Mars</a>
-                <a href="/pages/jupiter.html">Jupiter</a>
-                <a href="#">Saturn</a>
-                <a href="#">Uranus</a>
-            </div>
-        </li>
-        <a class="toggle-button">
-            <i class="fas fa-bars"></i>
-        </a>
+  <!-- Navbar -->
+  <ul id="navbar" class="normal-nav">
+    <a class="vujic-link" href="http://www.github.com/vujic02"><img src="../img/logo1.png" class="logo" /></a>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="/pages/moon.html">Earth's Moon</a></li>
+    <li><a class="about" href="">About</a></li>
+    <li class="dropdown">
+      <a class="dropbtn">Planets</a>
+      <div class="dropdown-content">
+        <a href="/pages/mercury.html">Mercury</a>
+        <a href="/pages/venus.html">Venus</a>
+        <a href="/pages/earth.html">Earth</a>
+        <a href="/pages/mars.html">Mars</a>
+        <a href="/pages/jupiter.html">Jupiter</a>
+        <a href="/pages/saturn.html">Saturn</a>
+        <a href="/pages/uranus.html">Uranus</a>
+        <a href="/pages/neptune.html">Neptune</a>
+      </div>
+    </li>
+    <a class="toggle-button">
+      <i class="fas fa-bars"></i>
+    </a>
+  </ul>
+  <!-- End of Navbar -->
+
+  <!-- Landing -->
+  <section class="mercury">
+    <div class="planet-name">
+        <h1>Mercury</h1>
+        <h2>The Swiftest Planet</h2>
+    </div>
+  </section>
+
+  <!-- Split -->
+  <div class="split-1">
+    <a href="#whatisaplanet">MORE</a>
+  </div>
+  <div class="split-2">
+    <ul>
+      <li>
+        <a class="active-text" href="#overview">Overview</a>
+      </li>
+      <li>
+        <a id="whatisaplanet">What is a planet?</a>
+      </li>
     </ul>
-    <!-- End of Navbar -->
+  </div>
+  <!-- End of Split -->
 
-    <!-- 3d overlay -->
-    <div class="section-3d-overlay">
-        <div class="planet-name">
-            <h1>Mars</h1>
-            <h2>The Red Planet</h2>
-        </div>
-
+  <!-- Overview -->
+  <div id="overview">
+    <div class="planet-info">
+      There are more planets than stars in our galaxy. The current count orbiting our star: <strong>eight</strong>.
+      <br><br>
+      The inner, rocky planets are <a>Mercury</a>, <a>Venus</a>, <a>Earth</a> and <a>Mars</a>. The outer planets are gas
+      giants
+      <a>Jupiter</a> and <a>Saturn</a>
+      and ice giants <a>Uranus</a> and <a>Neptune</a>.
     </div>
-    <!-- 3d overlay END -->
 
-    <!-- 3d Model -->
-    <div class="saturn"></div>
-
-    <!-- Split -->
-    <div class="split-1">
-        <h2>MORE</h2>
+    <div class="message-box">
+      <div class="box-wrapper-20">
+        <h1>Did You know?</h1>
+        <p><strong>Why Is It Called The "Solar" System?</strong>
+          There are many planetary systems like ours in the universe, with planets orbiting a host star. Our planetary
+          system is named the "solar" system because our Sun is named Sol, after the Latin word for Sun, "solis," and
+          anything related to the Sun we call "solar."
+        </p>
+      </div>
     </div>
-    <div class="split-2">
-        <ul>
-            <li>
-                <a class="active-text" href="#overview">Overview</a>
-            </li>
-            <li>
-                <a href="#whatisaplanet">What is a planet?</a>
-            </li>
-        </ul>
+
+    <div class="box-wrapper-30">
+      <p>Beyond Neptune, a newer class of smaller worlds called dwarf planets reign, including longtime favorite
+        <a>Pluto</a>.
+      </p>
     </div>
-    <!-- End of Split -->
+  </div>
+  <!-- End of Overview -->
 
-    <!-- Overview -->
-    <div id="overview">
-        <div class="planet-info">
-            There are more planets than stars in our galaxy. The current count orbiting our star:
-            <strong>eight</strong>.
-            <br><br>
-            The inner, rocky planets are <a>Mercury</a>, <a>Venus</a>, <a>Earth</a> and <a>Mars</a>. The outer planets
-            are gas
-            giants
-            <a>Jupiter</a> and <a>Saturn</a>
-            and ice giants <a>Uranus</a> and <a>Neptune</a>.
-        </div>
+  <!-- Need to know -->
+  <div id="need-to-know">
+    <h1 class="headline">10 Need-to-Know Things About the Solar System</h1>
 
-        <div class="message-box">
-            <div class="box-wrapper-20">
-                <h1>Did You know?</h1>
-                <p><strong>Why Is It Called The "Solar" System?</strong>
-                    There are many planetary systems like ours in the universe, with planets orbiting a host star. Our
-                    planetary
-                    system is named the "solar" system because our Sun is named Sol, after the Latin word for Sun,
-                    "solis," and
-                    anything related to the Sun we call "solar."
-                </p>
-            </div>
+    <div class="box-wrapper-outer">
+      <div class="box-wrapper new-row">
+        <div class="box left-remove">
+          <div class="box-content">
+            <div class="box-num">1</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf planets,
+              asteroids and comets.</p>
+          </div>
         </div>
-
-        <div class="box-wrapper-30">
-            <p>Beyond Neptune, a newer class of smaller worlds called dwarf planets reign, including longtime favorite
-                <a>Pluto</a>.
-            </p>
+        <div class="box">
+          <div class="box-content">
+            <div class="box-num">2</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf planets,
+              asteroids and comets.</p>
+          </div>
         </div>
+        <div class="box">
+          <div class="box-content">
+            <div class="box-num">3</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf
+              planets,
+              asteroids and comets.</p>
+          </div>
+        </div>
+        <div class="box-display-fix">
+          <div class="box-content">
+            <div class="box-num">4</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf
+              planets,
+              asteroids and comets.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- End of Overview -->
 
-    <!-- Need to know -->
-    <div id="need-to-know">
-        <h1 class="headline">10 Need-to-Know Things About the Solar System</h1>
-
-        <div class="box-wrapper-outer">
-            <div class="box-wrapper new-row">
-                <div class="box left-remove">
-                    <div class="box-content">
-                        <div class="box-num">1</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="box-content">
-                        <div class="box-num">2</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="box-content">
-                        <div class="box-num">3</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf
-                            planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-                <div class="box-display-fix">
-                    <div class="box-content">
-                        <div class="box-num">4</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf
-                            planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-            </div>
+    <div class="box-wrapper-outer">
+      <div class="box-wrapper new-row">
+        <div class="box-img">
+          <div class="img-wrap">
+            <img src="/img/mercury1.jpg">
+          </div>
         </div>
-
-        <div class="box-wrapper-outer">
-            <div class="box-wrapper new-row">
-                <div class="box-img">
-                    <div class="img-wrap">
-                        <img src="/img/mars1.jpg">
-                    </div>
-                </div>
-                <div class="box box-fix2">
-                    <div class="box-content">
-                        <div class="box-num">4</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf
-                            planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-                <div class="box  box-fix1">
-                    <div class="box-content">
-                        <div class="box-num">5</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf
-                            planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-                <div class="box-display-fix">
-                    <div class="box-content">
-                        <div class="box-num">6</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf
-                            planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="box box-fix2">
+          <div class="box-content">
+            <div class="box-num">4</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf
+              planets,
+              asteroids and comets.</p>
+          </div>
         </div>
-
-        <div class="box-wrapper-outer">
-            <div class="box-wrapper new-row">
-                <div class="box box-fix2 left-remove">
-                    <div class="box-content">
-                        <div class="box-num">6</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf
-                            planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-                <div class="box no-border">
-                    <div class="box-content">
-                        <div class="box-num">7</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf
-                            planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="box-content">
-                        <div class="box-num">8</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf
-                            planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="box  box-fix1">
+          <div class="box-content">
+            <div class="box-num">5</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf
+              planets,
+              asteroids and comets.</p>
+          </div>
         </div>
-
-        <div class="box-wrapper-outer">
-            <div class="box-wrapper new-row">
-                <div class="box left-remove bottom-remove">
-                    <div class="box-content">
-                        <div class="box-num">9</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf
-                            planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-                <div class="box bottom-remove">
-                    <div class="box-content">
-                        <div class="box-num">10</div>
-                        <h2>One of Billions</h2>
-                        <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as
-                            dwarf
-                            planets,
-                            asteroids and comets.</p>
-                    </div>
-                </div>
-                <div class="box-img">
-                    <div class="img-wrap">
-                        <img src="/img/mars2.jpg">
-                    </div>
-                </div>
-            </div>
+        <div class="box-display-fix">
+          <div class="box-content">
+            <div class="box-num">6</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf
+              planets,
+              asteroids and comets.</p>
+          </div>
         </div>
-
+      </div>
     </div>
-    <!-- End of Need to know -->
 
-    <!-- FAQ Section -->
-    <div id="FAQ">
-        <div class="faq-wrapper">
-            <h1>FAQ: What Spacecraft are Headed into Interstellar Space?</h1>
+    <div class="box-wrapper-outer">
+      <div class="box-wrapper new-row">
+        <div class="box box-fix2 left-remove">
+          <div class="box-content">
+            <div class="box-num">6</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf
+              planets,
+              asteroids and comets.</p>
+          </div>
         </div>
-        <div class="faq-text-wrapper">
-            <p>Five spacecraft have achieved enough velocity to eventually travel beyond the boundaries of our solar
-                system.
-                Two of them reached the unexplored space between the stars after several decades in space.<br><br>
-
-                <a href="https://solarsystem.nasa.gov/missions/voyager-1/in-depth/">Voyager 1</a> went interstellar in
-                2012 and
-                <a href="">Voyager 2</a> joined it in 2018. Both spacecraft
-                are still in
-                communication
-                with Earth. Both spacecraft launched in 1977.<br><br>
-                NASA's <a href="">New Horizons</a> spacecraft—currently exploring the an icy region beyond Neptune
-                called
-                the
-                Kuiper
-                Belt—eventually will leave our solar system.
-                <br><br><a href="">Pioneer 10</a> and <a>Pioneer 11</a> also will ultimately travel silently among the
-                stars.
-                The
-                spacecraft used
-                up
-                their
-                power supplies decades ago.</p>
+        <div class="box no-border">
+          <div class="box-content">
+            <div class="box-num">7</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf
+              planets,
+              asteroids and comets.</p>
+          </div>
         </div>
-        <hr>
-        <p>Page Updated: October 7, 2019</p>
+        <div class="box">
+          <div class="box-content">
+            <div class="box-num">8</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf
+              planets,
+              asteroids and comets.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- End of FAQ Section -->
 
-    <!-- Footer -->
-    <div class="footer-bg">
-        <footer>
-
-            <h1 class="footer-heading">Stay Connected</h1>
-
-            <ul class="links-list">
-                <li>
-                    <a id="github" href="https://github.com/vujic02"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                    <a id="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                    <a id="instagram" href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-            </ul>
-
-            <div class="footer-outer">
-                <div class="footer-inner">
-
-                    <div class="footer-box">
-                        <h3>Planets</h3>
-                        <div class="footer-box-links">
-                            <a href="#">Mercury</a>
-                            <a href="#">Venus</a>
-                            <a href="#">Earth</a>
-                            <a href="/pages/mars.html">Mars</a>
-                            <a href="/pages/jupiter.html">Jupiter</a>
-                            <a href="#">Saturn</a>
-                            <a href="#">Uranus</a>
-                        </div>
-                    </div>
-                    <div class="footer-box">
-                        <h3>Moons</h3>
-                        <div class="footer-box-links">
-                            <a href="#">Earth's Moon</a>
-                        </div>
-                    </div>
-                    <div class="footer-box">
-                        <h3>Moons</h3>
-                        <div class="footer-box-links">
-                            <a href="#">Earth's Moon</a>
-                        </div>
-                    </div>
-                    <div class="footer-box">
-                        <h3>Moons</h3>
-                        <div class="footer-box-links">
-                            <a href="#">Earth's Moon</a>
-                        </div>
-                    </div>
-                    <div class="footer-box">
-                        <h3>Moons</h3>
-                        <div class="footer-box-links">
-                            <a href="#">Earth's Moon</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="rights">
-                <p class="rights-heading">
-                    <a href="">About Us</a> | <a href="">Bibliography</a> | <a href="">Image Use</a> | <a
-                        href="">Privacy</a> |
-                    <a href="">Feedback</a>
-                </p>
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, eius. Soluta dolores magnam
-                    quaerat
-                    <br>
-                    iste
-                    neque, ducimus distinctio possimus, cum ex placeat eos hic, totam iure. Sequi veritatis eius quod.
-                </p>
-
-            </div>
-
-        </footer>
+    <div class="box-wrapper-outer">
+      <div class="box-wrapper new-row">
+        <div class="box left-remove bottom-remove">
+          <div class="box-content">
+            <div class="box-num">9</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf
+              planets,
+              asteroids and comets.</p>
+          </div>
+        </div>
+        <div class="box bottom-remove">
+          <div class="box-content">
+            <div class="box-num">10</div>
+            <h2>One of Billions</h2>
+            <p>Our solar system is made up of a star, eight planets and countless smaller bodies such as dwarf
+              planets,
+              asteroids and comets.</p>
+          </div>
+        </div>
+        <div class="box-img">
+          <div class="img-wrap">
+            <img src="/img/mercury2.jpg">
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- End of Footer -->
+
+  </div>
+  <!-- End of Need to know -->
+
+  <!-- FAQ Section -->
+  <div id="FAQ">
+    <div class="faq-wrapper">
+      <h1>FAQ: What Spacecraft are Headed into Interstellar Space?</h1>
+    </div>
+    <div class="faq-text-wrapper">
+      <p>Five spacecraft have achieved enough velocity to eventually travel beyond the boundaries of our solar
+        system.
+        Two of them reached the unexplored space between the stars after several decades in space.<br><br>
+
+        <a href="https://solarsystem.nasa.gov/missions/voyager-1/in-depth/">Voyager 1</a> went interstellar in
+        2012 and
+        <a href="">Voyager 2</a> joined it in 2018. Both spacecraft
+        are still in
+        communication
+        with Earth. Both spacecraft launched in 1977.<br><br>
+        NASA's <a href="">New Horizons</a> spacecraft—currently exploring the an icy region beyond Neptune
+        called
+        the
+        Kuiper
+        Belt—eventually will leave our solar system.
+        <br><br><a href="">Pioneer 10</a> and <a>Pioneer 11</a> also will ultimately travel silently among the
+        stars.
+        The
+        spacecraft used
+        up
+        their
+        power supplies decades ago.</p>
+    </div>
+    <hr>
+    <p>Page Updated: October 7, 2019</p>
+  </div>
+  <!-- End of FAQ Section -->
+
+  <!-- Footer -->
+  <div class="footer-bg">
+    <footer>
+
+      <h1 class="footer-heading">Stay Connected</h1>
+
+      <ul class="links-list">
+        <li>
+          <a id="github" href="https://github.com/vujic02"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a id="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_vujic02/" id="instagram" href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+
+      <div class="footer-outer">
+        <div class="footer-inner">
+
+          <div class="footer-box">
+            <h3>Planets</h3>
+            <div class="footer-box-links">
+              <a href="#">Mercury</a>
+              <a href="#">Venus</a>
+              <a href="/pages/earth.html">Earth</a>
+              <a href="/pages/mars.html">Mars</a>
+              <a href="/pages/jupiter.html">Jupiter</a>
+              <a href="#">Saturn</a>
+              <a href="#">Uranus</a>
+            </div>
+          </div>
+          <div class="footer-box">
+            <h3>Moons</h3>
+            <div class="footer-box-links">
+              <a href="#">Earth's Moon</a>
+            </div>
+          </div>
+          <div class="footer-box">
+            <h3>Moons</h3>
+            <div class="footer-box-links">
+              <a href="#">Earth's Moon</a>
+            </div>
+          </div>
+          <div class="footer-box">
+            <h3>Moons</h3>
+            <div class="footer-box-links">
+              <a href="#">Earth's Moon</a>
+            </div>
+          </div>
+          <div class="footer-box">
+            <h3>Moons</h3>
+            <div class="footer-box-links">
+              <a href="#">Earth's Moon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rights">
+        <p class="rights-heading">
+          <a href="">About Us</a> | <a href="">Bibliography</a> | <a href="">Image Use</a> | <a href="">Privacy</a> |
+          <a href="">Feedback</a>
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, eius. Soluta dolores magnam
+          quaerat
+          iste
+          neque, ducimus distinctio possimus, cum ex placeat eos hic, totam iure. Sequi veritatis eius quod.</p>
+
+      </div>
+
+    </footer>
+  </div>
+  <!-- End of Footer -->
+
+  <script src="/pages/scripts/sticky-nav.js"></script>
+  <script src="/pages/scripts/responsive-nav.js"></script>
 
 
-    <script src="/pages/scripts/three.min.js"></script>
-    <script src="/pages/scripts/GLTFLoader.js"></script>
-    <script src="/pages/scripts/OrbitControls.js"></script>
-    <script src="/pages/scripts/saturn.js"></script>
-    <script src="/pages/scripts/sticky-nav.js"></script>
-    <script src="/pages/scripts/responsive-nav.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@ function init() {
   camera.position.y = 100;
   camera.position.z = 1000;
 
-  hlight = new THREE.AmbientLight(0x404040, 10);
+  hlight = new THREE.AmbientLight(0x404040, 8);
   scene.add(hlight);
 
 
