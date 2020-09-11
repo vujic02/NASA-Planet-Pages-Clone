@@ -461,6 +461,13 @@ html, body {
     margin-right: 10%;
     font-family: 'Gayathri', sans-serif;
   }
+
+  footer h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+  }
   
   .footer-outer {
     margin-right: 10%;
