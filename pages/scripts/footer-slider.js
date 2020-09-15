@@ -21,3 +21,13 @@ $('.slider-inner').slick({
       }
     ]
   });
+
+  $('.mercury-slider').slick({
+    dots: true,
+    draggable: false,
+    focusOnSelect: false,
+    swipe: false,
+    autoplay: true,
+    autoplaySpeed: 4000
+  });
+      

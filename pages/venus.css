@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     height: 100%;
-    background-color: rgba(255, 254, 245, 0.892);
+    background-color: rgba(235, 244, 245, 0.9)
   }
   
   body {
@@ -275,6 +275,7 @@ html, body {
     font-size: 24px;
     padding-top: 40px;
     padding-bottom: 80px;
+    color: rgb(58, 58, 58);
   }
   
   .planet-info a {
@@ -285,44 +286,7 @@ html, body {
     cursor: pointer;
     text-decoration: underline;
   }
-  
-  
-  .message-box {
-    border: #fbb00e 5px solid;
-  }
-  
-  .box-wrapper-20 {
-    padding: 20px;
-  }
-  
-  .message-box h1 {
-    color: #f6bb2b;
-    font-size: 36px;
-  }
-  
-  .message-box p {
-    font-size: 22px;
-    font-weight: 400;
-  }
-  
-  .box-wrapper-30 {
-    padding-top: 40px;
-    padding-bottom: 30px;
-  }
-  
-  .box-wrapper-30 p {
-    font-size: 22px;
-    font-weight: 500;
-  }
-  
-  .box-wrapper-30 a {
-    color: rgb(67, 170, 237);
-  }
-  
-  .box-wrapper-30 a:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
+
   
   /* Need to know section */
   #need-to-know {
@@ -776,9 +740,6 @@ html, body {
     .footer-box {
       text-align: center;
     }
-    .mars {
-      height: 850px;
-    }
   
     .planet-name {
       z-index: 1;
@@ -787,6 +748,11 @@ html, body {
       left: 35%;
       right: 40%;
       text-align: center;
+    }
+
+    #overview {
+      margin-left: 20%;
+      margin-right: 20%;
     }
   
   }
@@ -890,6 +856,11 @@ html, body {
     #FAQ {
       margin-left: 5%;
       margin-right: 5%;
+    }
+
+    #overview {
+      margin-left: 10%;
+      margin-right: 10%;
     }
   }
   
